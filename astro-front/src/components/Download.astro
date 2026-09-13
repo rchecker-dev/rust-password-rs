@@ -5,7 +5,7 @@ interface Props { lang: Locale; }
 const { lang } = Astro.props;
 const t = translations[lang];
 ---
-<section class="download page"><div class="glow" aria-hidden="true"></div><p class="label">{t.getStarted}</p><h2>{t.downloadHeading}<br />{t.downloadHeadingAccent}</h2><p class="summary">{t.heroDescription}</p><a class="primary-button" href="https://github.com/R-udren/rust-password-rs/releases/latest/download/rust-password.exe"><Download size={16} />{t.download}</a></section>
+<section class="download page"><div class="glow" aria-hidden="true"></div><p class="label">{t.getStarted}</p><h2>{t.downloadHeading}<br />{t.downloadHeadingAccent}</h2><p class="summary">{t.heroDescription}</p><a class="primary-button" href="https://github.com/rchecker-dev/rust-password-rs/releases/latest/download/rust-password.exe"><Download size={16} />{t.download}</a></section>
 <style>
   .download { position: relative; overflow: hidden; padding: 190px clamp(24px,6vw,76px) 205px; text-align: center; }
   .glow { position: absolute; z-index: -1; top: 24%; left: 50%; width: min(960px,120vw); height: 360px; border-radius: 50%; background: rgba(79,58,115,.13); filter: blur(95px); transform: translateX(-50%); }
